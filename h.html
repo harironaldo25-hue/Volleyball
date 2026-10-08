@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Image Generator</title>
+</head>
+<body>
+
+<img id="image" src="" width="400">
+
+<br><br>
+
+<button onclick="generateImage()">Generate Image</button>
+
+<script>
+function generateImage() {
+    document.getElementById("image").src =
+        "https://picsum.photos/400/300?random=" + Math.random();
+}
+</script>
+
+</body>
+</html>

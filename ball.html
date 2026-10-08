@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+      <html lan=""en">
+      <head>
+           <meta charset="UTF-8">
+           <!DOCTYPE html>
+           <html lang="en">
+           <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>hariharan</title>
+            <h6>my name is hariharan</h6>
+           </head>
+           <body>
+           </body>
+           </html> -->
+
+           <!-- <!DOCTYPE html>
+           <html lang="en">
+           <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>hello from nexturn</title>
+            <h7>hariharan</h7>
+           </head>
+           <body>
+            
+           </body>
+           </html> -->
+<!-- ------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML to Image</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+
+<div id="capture" style="width:300px;height:200px;background:lightblue;">
+    <h2>Hello Hari 👋</h2>
+    <p>This will become an image</p>
+</div>
+
+<button onclick="takeScreenshot()">Download Image</button>
+
+<script>
+function takeScreenshot() {
+    html2canvas(document.getElementById("capture")).then(canvas => {
+        let link = document.createElement("a");
+        link.download = "image.png";
+        link.href = canvas.toDataURL();
+        link.click();
+    });
+}
+</script>
+
+</body>
+</html>
